@@ -1,2 +1,3 @@
-# dualsenseedge
- 测试
+# dualshock-tools.github.io
+
+The code behind the DualShock Calibration GUI
