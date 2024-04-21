@@ -443,7 +443,7 @@ async function ds5_calibrate_sticks_end(has_perm_changes) {
         await device.sendFeatureReport(0x82, alloc_req(0x82, [2,1,1]))
 
         data = await device.receiveFeatureReport(0x83)
-        if(data.getUint32(0, false) != 0x83010102) {
+        if(data.getUint32(0, false) != 0x83010101) {
             d1 = dec2hex32(data.getUint32(0, false));
             show_popup(err + l("Error 3") + " (" + d1 + ").");
             return false;
