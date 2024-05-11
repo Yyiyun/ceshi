@@ -562,7 +562,7 @@ async function ds5_calibrate_range_end(perm_ch) {
     
         // Assert
         data = await device.receiveFeatureReport(0x83)
-        if(data.getUint32(0, false) != 0x83010202) {
+        if(data.getUint32(0, false) != 0x83010201) {
             d1 = dec2hex32(data.getUint32(0, false));
             close_calibrate_window();
             return show_popup(err + l("Error 1") + " (" + d1 + ").");
