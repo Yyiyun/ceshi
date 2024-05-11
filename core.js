@@ -754,7 +754,7 @@ try {
     } else if(device.productId == 0x0df2) {
         if(await ds5_info()) {
             connected = true
-            mode = 0;
+            mode = 2;
             devname = l("Sony DualSense Edge");
             disable_btn = false;
         }
